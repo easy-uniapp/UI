@@ -1,0 +1,11 @@
+{
+  "name": "@easy-uniapp/ui",
+  "version": "1.0.0",
+  "description": "Easy Uni-App UI",
+  "repository": {
+    "url": "https://github.com/easy-uniapp/ui"
+  },
+  "main": "src/index.scss",
+  "author": "godtail <i@tech.top>",
+  "license": "MIT"
+}

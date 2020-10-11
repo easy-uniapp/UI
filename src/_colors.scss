@@ -1,0 +1,27 @@
+$colors: (
+  main: #53b360,
+) !default;
+
+$grays: #1a202c, #2d3748, #4a5568, #718096, #a0aec0, #cbd5e0, #e2e8f0, #edf2f7, #f7fafc !default;
+
+@mixin set-color($name, $color) {
+  .#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background: $color;
+  }
+  .border-#{$name} {
+    border-color: $color;
+  }
+}
+
+@each $name, $color in $colors {
+  @include set-color($name, $color);
+}
+
+$grayIndex: 1;
+@each $gray in $grays {
+  @include set-color(gray-#{$grayIndex}, $gray);
+  $grayIndex: $grayIndex + 1;
+}

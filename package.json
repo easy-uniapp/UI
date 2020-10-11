@@ -5,7 +5,13 @@
   "repository": {
     "url": "https://github.com/easy-uniapp/ui"
   },
+  "scripts": {
+    "start": "node-sass src -o dist"
+  },
   "main": "src/index.scss",
   "author": "godtail <i@tech.top>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
 }

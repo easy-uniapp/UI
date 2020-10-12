@@ -1,0 +1,162 @@
+// spaces
+$default-spaces: (
+  px: 1px,
+  1: 4rpx,
+  2: 8rpx,
+  3: 12rpx,
+  4: 16rpx,
+  5: 20rpx,
+  6: 24rpx,
+  8: 32rpx,
+  10: 40rpx,
+  12: 48rpx,
+  16: 64rpx,
+  20: 80rpx,
+  24: 96rpx,
+  32: 128rpx,
+  40: 160rpx,
+  48: 192rpx,
+  56: 224rpx,
+  64: 256rpx,
+) !default;
+$custom-spaces: () !default;
+$spaces: map-merge($default-spaces, $custom-spaces);
+
+@each $name, $space in $spaces {
+  .m-#{$name} {
+    margin: $space;
+  }
+  .mx-#{$name} {
+    margin-left: $space;
+    margin-right: $space;
+  }
+  .my-#{$name} {
+    margin-top: $space;
+    margin-bottom: $space;
+  }
+  .ml-#{$name} {
+    margin-left: $space;
+  }
+  .mr-#{$name} {
+    margin-right: $space;
+  }
+  .p-#{$name} {
+    padding: $space;
+  }
+  .px-#{$name} {
+    padding-left: $space;
+    padding-right: $space;
+  }
+  .py-#{$name} {
+    padding-top: $space;
+    padding-bottom: $space;
+  }
+  .pl-#{$name} {
+    padding-left: $space;
+  }
+  .pr-#{$name} {
+    padding-right: $space;
+  }
+  .w-#{$name} {
+    width: $space;
+  }
+  .h-#{$name} {
+    height: $space;
+  }
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+// container
+.container {
+  width: 100%;
+}
+
+// box sizing
+.box-border {
+  box-sizing: border-box;
+}
+.box-content {
+  box-sizing: content-box;
+}
+
+// display
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.contents {
+  display: contents;
+}
+.hidden {
+  display: none;
+}
+
+// overflow
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-visible {
+  overflow: visible;
+}
+
+// position
+.static {
+  position: static;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+
+// visibility
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
+
+// z-index
+$default-z-indexs: (
+  0: 0,
+  10: 10,
+  20: 20,
+  30: 30,
+  40: 40,
+  50: 50,
+  auto: auto,
+) !default;
+$custom-z-indexs: () !default;
+$z-indexs: map-merge($default-z-indexs, $custom-z-indexs);
+
+@each $name, $z-index in $z-indexs {
+  .z-#{$name} {
+    z-index: $z-index;
+  }
+}

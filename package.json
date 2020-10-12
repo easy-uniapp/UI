@@ -6,7 +6,7 @@
     "url": "https://github.com/easy-uniapp/ui"
   },
   "scripts": {
-    "start": "node-sass src -o dist"
+    "start": "node-sass src -o dist -watch"
   },
   "main": "src/index.scss",
   "author": "godtail <i@tech.top>",

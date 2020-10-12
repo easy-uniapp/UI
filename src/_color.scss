@@ -1,8 +1,24 @@
-$colors: (
+// colors
+$default-colors: (
   main: #53b360,
 ) !default;
+$custom-colors: () !default;
+$colors: map-merge($default-colors, $custom-colors);
 
-$grays: #1a202c, #2d3748, #4a5568, #718096, #a0aec0, #cbd5e0, #e2e8f0, #edf2f7, #f7fafc !default;
+// grays
+$default-grays: (
+  1: #1a202c,
+  2: #2d3748,
+  3: #4a5568,
+  4: #718096,
+  5: #a0aec0,
+  6: #cbd5e0,
+  7: #e2e8f0,
+  8: #edf2f7,
+  9: #f7fafc,
+) !default;
+$custom-grays: () !default;
+$grays: map-merge($default-grays, $custom-grays);
 
 @mixin set-color($name, $color) {
   .#{$name} {

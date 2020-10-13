@@ -3,8 +3,20 @@
   "version": "1.0.0",
   "description": "Easy Uni-App UI",
   "repository": {
-    "url": "https://github.com/easy-uniapp/ui"
+    "type": "git",
+    "url": "git+https://github.com/easy-uniapp/ui"
   },
+  "bugs": {
+    "url": "https://github.com/easy-uniapp/ui/issues"
+  },
+  "homepage": "https://github.com/easy-uniapp/ui#readme",
+  "keywords": [
+    "easy",
+    "easy-uniapp",
+    "uniapp",
+    "uni-app",
+    "ui"
+  ],
   "scripts": {
     "start": "node-sass src -o dist -watch"
   },

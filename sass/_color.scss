@@ -21,7 +21,7 @@ $custom-grays: () !default;
 $grays: map-merge($default-grays, $custom-grays);
 
 @mixin set-color($name, $color) {
-  .#{$name} {
+  .c-#{$name} {
     color: $color;
   }
   .bg-#{$name} {

@@ -20,10 +20,6 @@
   "scripts": {
     "start": "node-sass src -o dist -watch"
   },
-  "main": "src/index.scss",
-  "files": [
-    "src"
-  ],
   "author": "godtail <i@tech.top>",
   "license": "MIT",
   "devDependencies": {

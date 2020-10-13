@@ -1,10 +1,14 @@
 // font size
 $default-font-sizes: (
-  xs: 16rpx,
-  sm: 20rpx,
-  base: 24rpx,
+  3xs: 18rpx,
+  2xs: 20rpx,
+  xs: 22rpx,
+  sm: 24rpx,
+  base: 26rpx,
   lg: 28rpx,
-  xl: 32rpx,
+  xl: 30rpx,
+  2xl: 32rpx,
+  3xl: 34rpx,
 );
 $custom-font-sizes: () !default;
 $font-sizes: map-merge($default-font-sizes, $custom-font-sizes);

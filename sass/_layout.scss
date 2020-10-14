@@ -151,7 +151,7 @@ $default-z-indexs: (
   40: 40,
   50: 50,
   auto: auto,
-) !default;
+);
 $custom-z-indexs: () !default;
 $z-indexs: map-merge($default-z-indexs, $custom-z-indexs);
 
@@ -159,4 +159,54 @@ $z-indexs: map-merge($default-z-indexs, $custom-z-indexs);
   .z-#{$name} {
     z-index: $z-index;
   }
+}
+
+// border radius
+$default-roundeds: (
+  0: 0,
+  sm: 2rpx,
+  base: 5rpx,
+  lg: 10rpx,
+  full: 9999rpx,
+);
+$custom-roundeds: () !default;
+$roundeds: map-merge($default-roundeds, $custom-roundeds);
+
+@each $name, $rounded in $roundeds {
+  .rounded-#{$name} {
+    border-radius: $rounded;
+  }
+}
+
+// border width
+$default-border-widths: (
+  0: 0,
+  2: 2rpx,
+  4: 4rpx,
+  8: 8rpx,
+);
+$custom-border-widths: () !default;
+$border-widths: map-merge($default-border-widths, $custom-border-widths);
+
+@each $name, $border-width in $border-widths {
+  .border-#{$name} {
+    border-width: $border-width;
+  }
+}
+
+// border style
+.border-solid {
+  border-style: solid;
+}
+.border-dashed {
+  border-style: dashed;
+}
+.border-dotted {
+  border-style: dotted;
+}
+.border-double {
+  border-style: double;
+}
+.border-none {
+  border-style: none;
 }

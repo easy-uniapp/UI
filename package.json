@@ -18,7 +18,7 @@
     "ui"
   ],
   "scripts": {
-    "start": "node-sass src -o dist -watch"
+    "start": "node-sass index.scss -o dist -watch"
   },
   "main": "index.scss",
   "author": "godtail <i@tech.top>",

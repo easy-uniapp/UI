@@ -18,7 +18,7 @@ $default-spaces: (
   48: 192rpx,
   56: 224rpx,
   64: 256rpx,
-) !default;
+);
 $custom-spaces: () !default;
 $spaces: map-merge($default-spaces, $custom-spaces);
 

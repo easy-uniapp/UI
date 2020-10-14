@@ -1,7 +1,7 @@
 // colors
 $default-colors: (
   main: #53b360,
-) !default;
+);
 $custom-colors: () !default;
 $colors: map-merge($default-colors, $custom-colors);
 
@@ -16,7 +16,7 @@ $default-grays: (
   7: #e2e8f0,
   8: #edf2f7,
   9: #f7fafc,
-) !default;
+);
 $custom-grays: () !default;
 $grays: map-merge($default-grays, $custom-grays);
 
@@ -36,8 +36,6 @@ $grays: map-merge($default-grays, $custom-grays);
   @include set-color($name, $color);
 }
 
-$grayIndex: 1;
-@each $gray in $grays {
-  @include set-color(gray-#{$grayIndex}, $gray);
-  $grayIndex: $grayIndex + 1;
+@each $name, $gray in $grays {
+  @include set-color(gray-#{$name}, $gray);
 }

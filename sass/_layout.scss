@@ -40,6 +40,12 @@ $spaces: map-merge($default-spaces, $custom-spaces);
   .mr-#{$name} {
     margin-right: $space;
   }
+  .mt-#{$name} {
+    margin-top: $space;
+  }
+  .mb-#{$name} {
+    margin-bottom: $space;
+  }
   .p-#{$name} {
     padding: $space;
   }
@@ -56,6 +62,12 @@ $spaces: map-merge($default-spaces, $custom-spaces);
   }
   .pr-#{$name} {
     padding-right: $space;
+  }
+  .pt-#{$name} {
+    padding-top: $space;
+  }
+  .pb-#{$name} {
+    padding-bottom: $space;
   }
   .w-#{$name} {
     width: $space;

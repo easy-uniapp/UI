@@ -18,12 +18,13 @@
     "ui"
   ],
   "scripts": {
-    "start": "node-sass index.scss -o dist -watch"
+    "start": "sass --watch index.scss dist/index.css"
   },
   "main": "index.scss",
   "author": "godtail <i@tech.top>",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.14.1"
-  }
+    "sass": "^1.27.0"
+  },
+  "dependencies": {}
 }

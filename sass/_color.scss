@@ -21,13 +21,13 @@ $custom-grays: () !default;
 $grays: map-merge($default-grays, $custom-grays);
 
 @mixin set-color($name, $color) {
-  .c-#{$name} {
+  .c-#{'' + $name} {
     color: $color;
   }
-  .bg-#{$name} {
+  .bg-#{'' + $name} {
     background: $color;
   }
-  .border-#{$name} {
+  .border-#{'' + $name} {
     border-color: $color;
   }
 }
@@ -37,5 +37,5 @@ $grays: map-merge($default-grays, $custom-grays);
 }
 
 @each $name, $gray in $grays {
-  @include set-color(gray-#{$name}, $gray);
+  @include set-color(gray-#{'' + $name}, $gray);
 }

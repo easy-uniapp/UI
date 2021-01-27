@@ -23,56 +23,56 @@ $custom-spaces: () !default;
 $spaces: map-merge($default-spaces, $custom-spaces);
 
 @each $name, $space in $spaces {
-  .m-#{$name} {
+  .m-#{'' + $name} {
     margin: $space;
   }
-  .mx-#{$name} {
+  .mx-#{'' + $name} {
     margin-left: $space;
     margin-right: $space;
   }
-  .my-#{$name} {
+  .my-#{'' + $name} {
     margin-top: $space;
     margin-bottom: $space;
   }
-  .ml-#{$name} {
+  .ml-#{'' + $name} {
     margin-left: $space;
   }
-  .mr-#{$name} {
+  .mr-#{'' + $name} {
     margin-right: $space;
   }
-  .mt-#{$name} {
+  .mt-#{'' + $name} {
     margin-top: $space;
   }
-  .mb-#{$name} {
+  .mb-#{'' + $name} {
     margin-bottom: $space;
   }
-  .p-#{$name} {
+  .p-#{'' + $name} {
     padding: $space;
   }
-  .px-#{$name} {
+  .px-#{'' + $name} {
     padding-left: $space;
     padding-right: $space;
   }
-  .py-#{$name} {
+  .py-#{'' + $name} {
     padding-top: $space;
     padding-bottom: $space;
   }
-  .pl-#{$name} {
+  .pl-#{'' + $name} {
     padding-left: $space;
   }
-  .pr-#{$name} {
+  .pr-#{'' + $name} {
     padding-right: $space;
   }
-  .pt-#{$name} {
+  .pt-#{'' + $name} {
     padding-top: $space;
   }
-  .pb-#{$name} {
+  .pb-#{'' + $name} {
     padding-bottom: $space;
   }
-  .w-#{$name} {
+  .w-#{'' + $name} {
     width: $space;
   }
-  .h-#{$name} {
+  .h-#{'' + $name} {
     height: $space;
   }
 }
@@ -168,7 +168,7 @@ $custom-z-indexs: () !default;
 $z-indexs: map-merge($default-z-indexs, $custom-z-indexs);
 
 @each $name, $z-index in $z-indexs {
-  .z-#{$name} {
+  .z-#{'' + $name} {
     z-index: $z-index;
   }
 }
@@ -185,7 +185,7 @@ $custom-roundeds: () !default;
 $roundeds: map-merge($default-roundeds, $custom-roundeds);
 
 @each $name, $rounded in $roundeds {
-  .rounded-#{$name} {
+  .rounded-#{'' + $name} {
     border-radius: $rounded;
   }
 }
@@ -201,7 +201,7 @@ $custom-border-widths: () !default;
 $border-widths: map-merge($default-border-widths, $custom-border-widths);
 
 @each $name, $border-width in $border-widths {
-  .border-#{$name} {
+  .border-#{'' + $name} {
     border-width: $border-width;
   }
 }

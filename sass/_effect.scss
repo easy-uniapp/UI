@@ -42,7 +42,7 @@ $custom-opacities: () !default;
 $opacities: map-merge($default-opacities, $custom-opacities);
 
 @each $name, $opacity in $opacities {
-  .opacity-#{$name} {
+  .opacity-#{'' + $name} {
     opacity: $opacity;
   }
 }
@@ -59,7 +59,7 @@ $custom-opacities: () !default;
 $opacities: map-merge($default-opacities, $custom-opacities);
 
 @each $name, $opacity in $opacities {
-  .opacity-#{$name} {
+  .opacity-#{'' + $name} {
     opacity: $opacity;
   }
 }

@@ -14,7 +14,7 @@ $custom-font-sizes: () !default;
 $font-sizes: map-merge($default-font-sizes, $custom-font-sizes);
 
 @each $name, $font-size in $font-sizes {
-  .text-#{$name} {
+  .text-#{'' + $name} {
     font-size: $font-size;
   }
 }
